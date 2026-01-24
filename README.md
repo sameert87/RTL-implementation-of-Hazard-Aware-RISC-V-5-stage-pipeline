@@ -1,5 +1,5 @@
 # Single-Core-5-Stage-Pipelined-RISC-V-Processor-with-Hazard-Handling-(RV32I)
-This project presents the design and verification of a single-core, single-issue, 5-stage pipelined RISC-V (RV32I) processor developed as part of EL Phase-2 for the Computer Architecture course.
+This project presents the design and verification of a single-core, single-issue, 5-stage pipelined RISC-V (RV32I) processor developed as part of EL Phase-2 for the Computer Architecture course at RV College of Engineering Bengaluru.
 
 The processor follows the classic five pipeline stages — Instruction Fetch (IF), Instruction Decode (ID), Execute (EX), Memory Access (MEM), and Write Back (WB) — and incorporates data hazard handling mechanisms to ensure correct execution of dependent instructions.
 
