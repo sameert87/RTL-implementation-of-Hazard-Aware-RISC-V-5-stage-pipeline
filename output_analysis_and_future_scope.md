@@ -92,6 +92,19 @@ x5 = 25 → PASS
 
 All test cases passed successfully.
 
+### RTL Synthesis Observation
+
+![RTL Synthesis Result](rtl_synthesis.jpeg)
+
+The RTL synthesis view confirms correct elaboration of the processor
+design. All pipeline stages, control logic, register file, and
+hazard-handling units are correctly inferred without combinational
+loops or unintended latches.
+
+The synthesized RTL structure validates that the Verilog implementation
+is hardware-ready and suitable for FPGA or ASIC-based realization.
+
+
 ## Future Scope
 
 1. **Extended Instruction Set Support**  
