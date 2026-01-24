@@ -13,3 +13,14 @@ To improve performance and reduce pipeline stalls, the design includes:
 The processor supports a subset of the RV32I instruction set, including arithmetic, logical, load/store, and branch instructions. Functional correctness is verified using a self-checking Verilog testbench, which monitors pipeline activity, forwarding behavior, and final register values.
 
 This implementation demonstrates fundamental concepts of pipelined processor design, hazard resolution, and verification, forming a strong foundation for further extensions such as branch prediction, cache integration, and advanced execution techniques.
+
+## Block Diagram
+
+The following figure shows the block diagram of the implemented single-core,
+5-stage pipelined RISC-V processor with hazard handling.
+
+![RISC-V Pipeline Block Diagram](block_diagram.png)
+
+Figure: Block diagram of a single-core, 5-stage pipelined RISC-V (RV32I) processor.
+The architecture consists of IF, ID, EX, MEM, and WB stages with pipeline registers
+and includes data hazard handling using operand forwarding and stall insertion.
