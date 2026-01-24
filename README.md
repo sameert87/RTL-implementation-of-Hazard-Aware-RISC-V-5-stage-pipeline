@@ -1,3 +1,5 @@
+![Frontpage_CA_EL](front_page_EL.png)
+
 # RTL implementation of Hazard-Aware RISC-V pipeline
 This project presents the design and verification of a single-core, single-issue, 5-stage pipelined RISC-V (RV32I) processor developed as part of EL Phase-2 for the Computer Architecture course at RV College of Engineering Bengaluru.
 
