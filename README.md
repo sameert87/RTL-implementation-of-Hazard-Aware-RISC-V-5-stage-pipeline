@@ -26,3 +26,19 @@ The architecture consists of IF, ID, EX, MEM, and WB stages with pipeline regist
 and includes data hazard handling using operand forwarding and stall insertion.
 
 Note: A common misconception - Although multiple functional blocks (ALU, branch logic, address calculation) are shown, they together form a single Execute (EX) stage and do not represent multiple pipeline stages :)
+
+
+## RTL Synthesis Results
+
+![RTL Synthesis View](rtl_synthesis.jpeg)
+
+The RTL synthesis result demonstrates successful elaboration of the
+5-stage pipelined RISC-V processor. All major blocks including the
+instruction fetch unit, decode logic, execution stage, memory access
+stage, write-back logic, and hazard-handling units are correctly
+inferred.
+
+The synthesis confirms that the design is fully synthesizable and
+structurally suitable for hardware implementation using FPGA or ASIC
+flows.
+
