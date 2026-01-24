@@ -24,3 +24,5 @@ The following figure shows the block diagram of the implemented single-core,
 Figure: Block diagram of a single-core, 5-stage pipelined RISC-V (RV32I) processor.
 The architecture consists of IF, ID, EX, MEM, and WB stages with pipeline registers
 and includes data hazard handling using operand forwarding and stall insertion.
+
+Note: A common misconception - Although multiple functional blocks (ALU, branch logic, address calculation) are shown, they together form a single Execute (EX) stage and do not represent multiple pipeline stages :)
