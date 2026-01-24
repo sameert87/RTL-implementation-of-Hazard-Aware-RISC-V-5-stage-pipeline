@@ -18,6 +18,7 @@ addi x2, x0, 10
 add  x3, x1, x2
 sub  x4, x1, x2
 add  x5, x2, x3
+```
 
 This program intentionally introduces multiple Read-After-Write (RAW)
 data hazards to validate the forwarding mechanism.
@@ -90,3 +91,30 @@ x4 = -5 → PASS
 x5 = 25 → PASS
 
 All test cases passed successfully.
+
+## Future Scope
+
+1. **Extended Instruction Set Support**  
+   The processor can be enhanced to support additional RISC-V instruction
+   extensions such as the M-extension for multiplication and division and
+   the C-extension for compressed instructions.
+
+2. **Improved Control Hazard Handling**  
+   Early branch resolution and dynamic branch prediction techniques can be
+   implemented to reduce control hazard penalties and improve instruction
+   throughput.
+
+3. **True Superscalar Execution**  
+   The current design can be extended to a true multi-issue superscalar
+   architecture by introducing multiple execution units and an instruction
+   scheduling mechanism.
+
+4. **Cache Memory Integration**  
+   Instruction and data caches can be added to reduce memory access latency
+   and improve overall processor performance.
+
+5. **Performance and Power Optimization**  
+   Pipeline balancing, clock gating, and power-aware design techniques can
+   be applied to optimize performance, area, and power consumption.
+
+
